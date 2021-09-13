@@ -1,12 +1,12 @@
-if game.CoreGui:FindFirstChild("DarkHubLib") then
-    game.CoreGui.DarkHubLib:Destroy()
+if game.CoreGui:FindFirstChild("ScrapterStopUwU") then
+    game.CoreGui.ScrapterStopUwU:Destroy()
 end
 game:GetService("UserInputService").InputBegan:connect(
     function(key, gpe)
         if key.KeyCode == Enum.KeyCode.RightControl then
             pcall(
                 function()
-                    for i, v in pairs(game.CoreGui.DarkHubLib:GetChildren()) do
+                    for i, v in pairs(game.CoreGui.ScrapterStopUwU:GetChildren()) do
                         v.Visible = not v.Visible
                     end
                 end
@@ -137,7 +137,7 @@ function Ripple(obj)
 end
 
 local DarkHubLib = Instance.new("ScreenGui")
-DarkHubLib.Name = "DarkHubLib"
+DarkHubLib.Name = "ScrapterStopUwU"
 DarkHubLib.Parent = game.CoreGui
 DarkHubLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -173,7 +173,7 @@ function DarkLib:Window()
 	Title.Position = UDim2.new(0.42778793, 0, 0.041837737, 0)
 	Title.Size = UDim2.new(0, 78, 0, 30)
 	Title.Font = Enum.Font.Gotham
-	Title.Text = "Dark Hub Is Shit"
+	Title.Text = "Dark Hub"
 	Title.TextColor3 = Color3.fromRGB(168, 168, 168)
 	Title.TextSize = 20.000
 
